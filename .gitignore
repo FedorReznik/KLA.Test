@@ -1,0 +1,10 @@
+KLA.Desktop/bin/
+KLA.Desktop/obj/
+KLA.Domain.Shared/bin/
+KLA.Domain.Shared/obj/
+KLA.Domain/obj/
+KLA.UnitTests/bin/
+KLA.Domain/bin/
+KLA.UnitTests/obj/
+KLA.WebAPI/bin/
+KLA.WebAPI/obj/
