@@ -8,8 +8,6 @@
 - KLA.Desktop: contains cross-platform desktop implementation using Avalonia UI.
 - KLA.UnitTests: contains unit tests for meaningful solution classes.
 
-Two run both solutions simultaneously select KLA.Desktop&KLA.Server configuration.
-
 ## 2. Decisions.
 
 ### 2.1 Conversion Algorithm.
