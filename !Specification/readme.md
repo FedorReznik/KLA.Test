@@ -12,13 +12,15 @@
 
 ### 2.1 Conversion Algorithm.
 Conversion algorithm is implemented based on scanning the currency amount value from left to right, please refer to: CurrencyToTextConverterService class. 
-This gives us the possibility to use StringBuilder for accumulating the result string, thus minifying memory allocation 
-compared, for example, with recursive implementation of conversion algorithm.
+This gives us the possibility to use StringBuilder for accumulating the result string, thus minifying memory allocation and GC. 
+
 
 ### 2.2 Server implementation.
 As the task states that solution should be based on .Net 6.0 it seems reasonable to implement server-side part as a REST service based on ASP.Net Core. 
 We could also consider RPC like communication between client and server based on websockets, but this seems overcomplicated.
-Also REST approach looks natural here: we have a resource which we can query e.g. money/text.
+Also REST approach looks natural here: we have a resource which we can query e.g. currency/text.
+
+
 
 ### 2.3 Desktop vs Web. Desktop Technology selection.
 Desktop application option was selected for this implementation - to stay in the same eco-system for each component. 

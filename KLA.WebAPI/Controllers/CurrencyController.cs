@@ -7,13 +7,13 @@ namespace KLA.WebAPI.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class MoneyController : ControllerBase
+public class CurrencyController : ControllerBase
 {
     private readonly ICurrencyToTextConverterService _currencyToTextConverterService;
     private readonly ICurrencyRangeValidator _currencyRangeValidator;
     private readonly ICurrencyParser _currencyParser;
 
-    public MoneyController(
+    public CurrencyController(
         ICurrencyToTextConverterService currencyToTextConverterService,
         ICurrencyRangeValidator currencyRangeValidator,
         ICurrencyParser parser)

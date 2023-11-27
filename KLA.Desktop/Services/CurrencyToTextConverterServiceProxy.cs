@@ -22,7 +22,7 @@ public class CurrencyToTextConverterServiceProxy : ICurrencyToTextConverterServi
 
     public async Task<string> Convert(string money)
     {
-        var request = new RestRequest("api/money/text/{money}").AddUrlSegment("money", money);
+        var request = new RestRequest("api/currency/text/{money}").AddUrlSegment("money", money);
         
         var response = await _restClient.ExecuteGetAsync<string>(request);
         

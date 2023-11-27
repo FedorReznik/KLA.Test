@@ -7,7 +7,7 @@ using NSubstitute;
 
 namespace KLA.Test.UnitTests.ControllerTests;
 
-public class MoneyControllerTests
+public class CurrencyControllerTests
 {
     private readonly ICurrencyParser _parser = Substitute.For<ICurrencyParser>();
     private readonly ICurrencyRangeValidator _validator = Substitute.For<ICurrencyRangeValidator>();
@@ -101,8 +101,8 @@ public class MoneyControllerTests
         Assert.Equal(StatusCodes.Status500InternalServerError, response.StatusCode);    
     }
 
-    private MoneyController Create()
+    private CurrencyController Create()
     {
-        return new MoneyController(_converter, _validator, _parser);
+        return new CurrencyController(_converter, _validator, _parser);
     }
 }
