@@ -20,7 +20,7 @@ As the task states that solution should be based on .Net 6.0 it seems reasonable
 We could also consider RPC like communication between client and server based on websockets, but this seems overcomplicated.
 Also REST approach looks natural here: we have a resource which we can query e.g. currency/text.
 
-What type should currency/text endpoint expect?
+What input type should currency/text endpoint expect?
 From one point seems logical to expect decimal value, cause we need to validate the value on client also.
 But if imaginary domain works with string currency literals separated by comma, 
 then probably there would be more than one client and we need to be able to accept strings.
